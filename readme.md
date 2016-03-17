@@ -10,6 +10,12 @@ $ npm install
 $ DEBUG=health:* npm run dev
 ```
 
+### Run tests
+
+```
+$ npm test
+```
+
 ### Deploy to Heroku
 
 ```
