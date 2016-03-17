@@ -1,0 +1,8 @@
+#!/usr/bin/env node
+'use strict';
+
+const app = require('../lib/app');
+
+app().listen(3000, (err) => {
+  if (err) throw err;
+});
