@@ -17,7 +17,8 @@
     "debug": "2.2.0",
     "express": "4.13.4",
     "logfmt": "1.2.0",
-    "superagent": "1.8.1"
+    "superagent": "1.8.1",
+    "throng": "2.0.1"
   },
   "devDependencies": {
     "nodemon": "1.9.1"
