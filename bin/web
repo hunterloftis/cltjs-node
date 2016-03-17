@@ -3,9 +3,10 @@
 
 const app = require('../lib/app');
 const config = {
-  port: process.env.PORT || 3000
+  port: process.env.PORT || 3000,
+  watchURL: process.env.WATCH_URL || 'http://www.meetup.com/CharlotteJS'
 };
 
-app().listen(config.port, (err) => {
+app(config).listen(config.port, (err) => {
   if (err) throw err;
 });
