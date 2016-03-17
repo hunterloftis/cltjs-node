@@ -4,7 +4,8 @@
 const app = require('../lib/app');
 const config = {
   port: process.env.PORT || 3000,
-  watchURL: process.env.WATCH_URL || 'http://www.meetup.com/CharlotteJS'
+  watchURL: process.env.WATCH_URL || 'http://www.meetup.com/CharlotteJS',
+  interval: process.env.WATCH_INTERVAL || 3000
 };
 
 app(config).listen(config.port, (err) => {
