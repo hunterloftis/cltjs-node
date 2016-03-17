@@ -2,12 +2,17 @@
 'use strict';
 
 const app = require('../lib/app');
+const debug = require('debug')('health:web');
+const log = require('logfmt').stringify;
+
 const config = {
   port: process.env.PORT || 3000,
   watchURL: process.env.WATCH_URL || 'http://www.meetup.com/CharlotteJS',
   interval: process.env.WATCH_INTERVAL || 3000
 };
 
+debug(log({ action: 'listen', port: config.port }));
 app(config).listen(config.port, (err) => {
   if (err) throw err;
+  debug(log({ event: 'listening', port: config.port }));
 });
