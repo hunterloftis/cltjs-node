@@ -8,7 +8,8 @@
   "main": "index.js",
   "scripts": {
     "start": "bin/web",
-    "dev": "nodemon bin/web"
+    "dev": "nodemon bin/web",
+    "test": "mocha"
   },
   "keywords": [],
   "author": "",
@@ -21,6 +22,8 @@
     "throng": "2.0.1"
   },
   "devDependencies": {
-    "nodemon": "1.9.1"
+    "mocha": "2.4.5",
+    "nodemon": "1.9.1",
+    "supertest": "1.2.0"
   }
 }
